@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="{{mix src="public/assets/logo.png"}}" alt="logo" width="100">
+      </a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {{ nav:collection:pages include_home="true" }}
+            <li class="nav-item">
+                <a href="{{ url }}" class="nav-link">{{ title }}</a>
+            </li>
+    {{ /nav:collection:pages }}       
+        </ul>      
+    </div>
+</nav>
